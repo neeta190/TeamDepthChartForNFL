@@ -21,4 +21,7 @@ This project uses the following technologies:
 Prerequisites
 Make sure you have the following installed on your machine:
 - Java 17+
-- Maven 
+- Maven
+
+Swagger URL
+http://localhost:8080/swagger-ui/index.html
