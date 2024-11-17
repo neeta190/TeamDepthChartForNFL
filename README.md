@@ -1,6 +1,6 @@
 # TeamDepthChart
 
-TeamDepthChart is designed to create a sample Trading Solution for NFL Depth Charts. This application provides a set of RESTful APIs to perform GET/POST/DELETE Operations for NFL Depth Charts
+TeamDepthChart is designed to create a sample Trading Solution for NFL Depth Charts. This application provides a set of RESTful APIs to perform GET/POST/DELETE Operations for NFL Depth Charts. Additionally the application also contains Junit test cases for testing the business logic.
 
 ## Features
 - Add a player to the team’s depth chart 
@@ -36,6 +36,10 @@ Make sure you have the following installed on your machine:
 4. Run the application
 
    mvn spring-boot:run
+   
+5. Run the Junit Test
+
+   mvn test
 
 ## Swagger URL
 http://localhost:8080/swagger-ui/index.html
