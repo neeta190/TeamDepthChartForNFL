@@ -44,7 +44,8 @@ http://localhost:8080/swagger-ui/index.html
 
 #### Adding a Player to Team's Depth Chart
 
-**Endpoint:** POST /depth/chart/addPlayerToDepthChart
+**Endpoint:** `POST /depth/chart/addPlayerToDepthChart`
+
 **Request Body:**
 
 ```json
@@ -87,7 +88,7 @@ HTTP Status 201 Created
 ```
 #### Get the backup(s) of a player
 
-**Endpoint:** `GET /depth/chart/getDepthChart` 
+**Endpoint:** `GET /depth/chart/getBackups` 
 
 **Request Param:**
 ```
