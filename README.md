@@ -1,14 +1,14 @@
-#TeamDepthChart
+# TeamDepthChart
 
 TeamDepthChart is designed to create a sample Trading Solution for NFL Depth Charts. This application provides a set of RESTful APIs to perform CRUD operations and manage the NFL Depth Charts
 
-Features
+## Features
 - Add a player to the team’s depth chart 
 - Get the full team depth chart
 - Get the backups of the player 
 - Delete player from the depth chart
 
-Technologies
+## Technologies
 This project uses the following technologies:
 - Java 17+
 - Spring Boot 3
@@ -18,10 +18,46 @@ This project uses the following technologies:
 - JUnit 5
 - Maven
 
-Prerequisites
+## Prerequisites
 Make sure you have the following installed on your machine:
 - Java 17+
 - Maven
+  
+## Steps to Install
+1.	Clone the repository
 
-Swagger URL
+  	git clone https://github.com/yourusername/project-name.git
+2.	Navigate to the project directory
+
+  	cd teamDepthcharts
+3. Build the project with Maven
+
+   mvn clean install
+4. Run the application
+
+   mvn spring-boot:run
+
+## Swagger URL
 http://localhost:8080/swagger-ui/index.html
+
+## Example API Requests
+
+Adding a Player to Team's Depth Chart
+
+Endpoint: POST /depth/chart/addPlayerToDepthChart
+
+**Request Body:**
+
+```json
+{
+  "position": "string",
+  "player": {
+    "number": 0,
+    "name": "string"
+  },
+  "depth": 0
+}
+```
+**Response:**  
+HTTP Status 201 Created  
+`Location: /depth/chart/getDepthChart`
