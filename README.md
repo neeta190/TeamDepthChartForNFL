@@ -26,7 +26,7 @@ Make sure you have the following installed on your machine:
 ## Steps to Install
 1.	Clone the repository
 
-  	git clone [https://github.com/yourusername/project-name.git](https://github.com/neeta190/TeamDepthChartForNFL.git)
+  	git clone https://github.com/neeta190/TeamDepthChartForNFL.git
 2.	Navigate to the project directory
 
   	cd teamDepthcharts
