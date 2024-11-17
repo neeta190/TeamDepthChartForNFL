@@ -1,12 +1,12 @@
 # TeamDepthChart
 
-TeamDepthChart is designed to create a sample Trading Solution for NFL Depth Charts. This application provides a set of RESTful APIs to perform CRUD operations and manage the NFL Depth Charts
+TeamDepthChart is designed to create a sample Trading Solution for NFL Depth Charts. This application provides a set of RESTful APIs to perform GET/POST/DELETE Operations for NFL Depth Charts
 
 ## Features
 - Add a player to the team’s depth chart 
 - Get the full team depth chart
-- Get the backups of a player 
-- Delete player from the depth chart
+- Get the backups of a player from team's depth chart
+- Delete a player from team's the depth chart
 
 ## Technologies
 This project uses the following technologies:
@@ -40,7 +40,7 @@ Make sure you have the following installed on your machine:
 ## Swagger URL
 http://localhost:8080/swagger-ui/index.html
 
-## Example API Requests
+## API Enpoints and  Example API Requests
 
 #### Adding a Player to Team's Depth Chart
 
@@ -85,9 +85,10 @@ HTTP Status 201 Created
   ]
 }
 ```
-#### Get the backups of a player
+#### Get the backup(s) of a player
 
 **Endpoint:** `GET /depth/chart/getDepthChart` 
+
 **Request Param:**
 ```
 playerPosition=QB
@@ -98,6 +99,23 @@ player={"number":12,"name":"Tom Brady"}
 ```
 [(#2, name=Kyle Trask), (#11, name=Blaine Gabbert)]
 ```
- HTTP Status 200 Created  
+ HTTP Status 200 OK  
+`Location: /depth/chart/getDepthChart`
+
+#### Delete a player 
+
+**Endpoint:** `DELETE /depth/chart/removePlayerFromDepthChart` 
+
+**Request Param:**
+```
+playerPosition=QB
+player={"number":12,"name":"Tom Brady"}
+```
+
+**Response:**  
+```
+[(#12, name=Tom Brady)]
+```
+ HTTP Status 200 OK  
 `Location: /depth/chart/getDepthChart`
 
